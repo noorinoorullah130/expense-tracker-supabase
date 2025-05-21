@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #a3c6fc;
+    padding: 0 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(110, 110, 110);
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    background-color: #dbe9fe;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+/* Sides */
+
+.left-side {
+    width: 35%;
+}
+
+.right-side {
+    width: 65%;
+    margin-left: 2rem;
+}
+
+/* AddBudget component */
+
+.add-budget,
+.add-expense,
+.expense-list {
+    background-color: #eef5ff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.add-budget h1,
+.add-expense h1,
+.expense-list h1 {
+    font-size: 2rem;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 8px;
+    outline: none;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+.add-budget button,
+.add-expense button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* ExpenseList component */
+
+.expense-list {
+    height: 80vh;
+    background-color: #eef5ff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.expense-list .budget-detail {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    padding-bottom: 10px;
+}
+
+.budget-detail h3 {
+    background-color: #c2daf5;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.expense-list .expense-history {
+    margin: 1.5rem 0;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    padding-bottom: 10px;
+}
+
+.expense-list .header {
+    display: flex;
+    padding: 0 1rem;
+    border-bottom: 3px solid rgb(209, 209, 209);
+    padding-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    width: 100%;
+}
+
+.expense-list .list-container {
+    overflow: auto;
+}
+
+.list-container .list {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    padding-bottom: 10px;
+}
+
+.list h3 {
+    width: 100%;
+}
+
+.list h3 .remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.list h3 .remove-btn:hover {
+    opacity: 0.8;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
